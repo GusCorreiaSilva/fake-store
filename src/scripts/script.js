@@ -26,8 +26,8 @@ function displayProducts(filteredProducts) {
     productElement.className = "product";
 
     productElement.innerHTML = `
-      <img src="${product.image}" alt="${product.title}" />
-      <div class="product-details">
+      <img class="p-3 w-40" src="${product.image}" alt="${product.title}" />
+      <div class="flex flex-col product-details">
         <strong>${product.title}</strong>
         <span>Categoria: ${product.category}</span>
         <span>Preço: $${product.price.toFixed(2)}</span>
